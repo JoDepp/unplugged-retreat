@@ -89,45 +89,51 @@ textarea {
 /* General Styles */
 
 html {
-        font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1em;
-        text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
 ol {
-      list-style-type: none;
+  list-style-type: none;
   }
 
 a {
-      color: #e2e3ed;
-      text-decoration: none;
+  color: #e2e3ed;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 2.25em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: bold;
+  text-align: left;
 }
 
 h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.875em;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
 }
 
 h3, 
 h4 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.125em;
-      margin: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  margin: 20px 0;
 }
 
 p {
-      font-size: .875em;
-      line-height: 1.285em;
+  font-size: .875em;
+  line-height: 1.285em;
 }
 
 img {
@@ -139,43 +145,83 @@ figure {
 }
 
 address {
-          font-style: normal;
+  font-style: normal;
 }
 
 .content-wrapper {
-                    width: 90%;
-                    margin: 50px 0;
+    width: 90%;
+    margin: 50px 0;
 }
 
+/*----------------------Base Header - Footer Styles-----------------*/
 header,
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  background-color: 202322;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-/* Header styles */
+header {
+  padding: 15px 0;
+}
 
 header .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 /*------------------ Footer ----------------------*/
+
+footer {
+  text-align: center;
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
 
 footer .social-icons {
     display: flex;
@@ -189,6 +235,10 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
+
 /* --------------------Mobile Styles - Homepage ------------------*/
 
 
@@ -198,15 +248,14 @@ footer .social-icons p {
     flex-flow: row wrap; 
 }
 
-main .content-wrapper {
-
-}
 /* ------------------Aside----*/
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: 527158;
+  text-align: left;
 }
 
 /* -------------- Features --*/
@@ -215,6 +264,15 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features p {
+  margin: 0;
 }
 
 .features .features-items {
@@ -230,6 +288,15 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: 2a423a;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 /*------------------------------About Page-------------------------*/
@@ -239,6 +306,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: left;
+  background-color: 527158;
 }
 
 .contact-section {
@@ -246,6 +315,12 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    text-align: left;
+    background-color: 2a423a;
+}
+
+.contact-content p{
+  margin: 0;
 }
 
 /*----------------- FAQ page ----------------------------------*/
@@ -258,12 +333,19 @@ aside {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+ .faq h2 {
+   margin-bottom: 40px;
+ }
 
+ .faq-content {
+   margin-bottom: 50px;
+ }
 
 /* ==========================================================================
    Helper classes
@@ -347,11 +429,32 @@ aside {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*=========================== Media Queries ====================================== */
 
 @media only screen and (min-width: 768px) {
   
