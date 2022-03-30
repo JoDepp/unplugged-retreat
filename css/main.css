@@ -355,11 +355,11 @@ About Page
 ====================================================================*/
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
 }
 .map figure {
   position: relative;
@@ -370,11 +370,11 @@ About Page
 }
 
 .map iframe {
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
 }
 
 .contact-section {
@@ -662,6 +662,10 @@ FAQ page
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
   .contact-section .content-wrapper h2{
     width: 80%;
   }
@@ -676,6 +680,7 @@ FAQ page
     font-size: 1.5em;
   }
 
+  
 /*==================================================================
   FAQ Page
   ================================================================*/
@@ -771,6 +776,10 @@ footer h4 {
 /*==========================================================
   About Page
   ================================================*/
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 96%; 
