@@ -422,17 +422,18 @@ FAQ page
   align-items: center;
   flex-flow: row wrap;
 }
- .faq h2 {
-   margin-bottom: 40px;
-   line-height: 1;
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
  }
 
- .faq-content {
-   margin-bottom: 50px;
- }
+.faq-content {
+  margin-bottom: 50px;
+  }
 
- .faq-content h4 {
-   line-height: 1.333;
+.faq-content h4 {
+  line-height: 1.333;
  }
  
 
