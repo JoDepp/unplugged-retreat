@@ -170,19 +170,19 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   background: #3a3a3a;
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
-}
-
-header figure {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 header nav {
@@ -193,7 +193,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 75%;
 }
 
 header nav ul {
@@ -336,7 +336,7 @@ input[type=button] {
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 /*----------------Reviews --*/
@@ -375,7 +375,7 @@ About Page
 }
 .map figure {
   position: relative;
-  padding-bottom: 125%;
+  padding-bottom: 50%;
   height: 0;
   overflow: hidden;
   width: 100%;
@@ -553,6 +553,7 @@ FAQ page
 
   header figure {
     width: 30%;
+    justify-content: flex-start;
   }
 
   header nav {
@@ -562,7 +563,7 @@ FAQ page
     justify-content: space-between;
   }
  
-  .header-divder {
+  .header-divider {
     display: none;
   }
 
@@ -594,6 +595,7 @@ FAQ page
 
   .features h2 {
     margin-bottom: 20px;
+    font-size: 2.25em;
   }
   .features article {
     display: flex;
@@ -607,6 +609,10 @@ FAQ page
     width: 62%;  /* don't get why, I get 68%*/
   }
 
+  .features i {
+    font-size: 4.5em;
+  }
+
   /* Reviews */
 
   .reviews article {
@@ -616,6 +622,7 @@ FAQ page
    
   .reviews h2 {
     width: 85%;
+    font-size: 2.25em;
   }
 
   .reviews article figure, .reviews article div {
@@ -659,18 +666,26 @@ FAQ page
   }
 
   footer .social-icons p{
-    margin-left: 1.5em;
+  
+    margin-left: 2em;
   }
 
   /*==================================================================
     About Page
     ============================================================*/
 
+
+  .mission h2 {
+    font-size: 2.25em;
+    line-height: 1.5;
+  }
+
   .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    
   }
 
   .mission-content p {
@@ -682,7 +697,8 @@ FAQ page
   }
 
   .contact-section .content-wrapper h2{
-    width: 80%;
+    width: 90%;
+    font-size: 2.25em;
   }
 
   .contact-content {
