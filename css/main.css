@@ -228,7 +228,7 @@ footer .contact {
 
 footer .social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -247,7 +247,7 @@ footer .copyright {
 }
 
 footer .social-icons p i {
-  font-size: 1.125;
+  font-size: 1.325em;
 }
 /* --------------------Mobile Styles - Homepage ------------------*/
 
@@ -418,7 +418,7 @@ FAQ page
 .faq .content-wrapper {
   margin: 50px 0 0 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -662,13 +662,13 @@ FAQ page
     line-height: 1.285;
   }
 
-  footer .copyright {
-    width: 100%;
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
-  footer .social-icons p{
-  
-    margin-left: 2em;
+  footer .copyright {
+    width: 100%;
   }
 
   /*==================================================================
